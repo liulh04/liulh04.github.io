@@ -1,45 +1,328 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang='en'>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人博客主页</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset='utf-8'>
+    <title>我的网页 - HTMLPAGE</title>
+    <meta name="description" content="myprofile">
+    <meta name="keywords" content="lanker">
+    <link href="css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preload" href="fonts/Simple-Line-Icons.woff2" as="font" type="font/woff2" crossorigin="" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .c66662 {
+            display: none;
+        }
+
+        .promo-block-img.img-responsive {
+            width: 529.800048828125px;
+            height: 530px;
+        }
+
+        .c74298,
+        .c74316,
+        .c74334 {
+            color: rgb(166, 167, 170);
+            font-size: 15px;
+        }
+
+        .img-responsive {
+            width: 381.333251953125px;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>欢迎来到我的个人博客</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#projects">项目</a></li>
-                <li><a href="#contact">联系我</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="body" data-spy="scroll" data-target=".header">
+        <!--========== HEADER ==========-->
+        <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav role="navigation" class="navbar">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="menu-container js_nav-item">
+                        <button type="button" data-toggle="collapse" data-target=".nav-collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="#body" class="logo-wrap">
+                                <img src="img/logo-small-svg.svg" alt="Asentus Logo" class="logo-img" />
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="nav navbar-nav navbar-nav-right">
+                                <li class="js_nav-item nav-item"><a href="#body" class="nav-item-child nav-item-hover">首页</a></li>
+                                <li class="js_nav-item nav-item"><a href="#about" class="nav-item-child nav-item-hover">关于我</a></li>
+                                <li class="js_nav-item nav-item"><a href="#experience" class="nav-item-child nav-item-hover">个人经验</a></li>
+                                <li class="js_nav-item nav-item"><a href="#work" class="nav-item-child nav-item-hover">项目案例</a></li>
+                                <li class="js_nav-item nav-item"><a href="#contact" class="nav-item-child nav-item-hover">联系我</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navbar Collapse -->
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--========== END HEADER ==========-->
 
-    <section id="about">
-        <h2>关于我</h2>
-        <p></p>
-    </section>
+        <!--========== SLIDER ==========-->
+        <div class="promo-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 sm-margin-b-60">
+                        <div class="margin-b-30">
+                            <h1 class="promo-block-title">Liu lh</h1>
+                            <p class="promo-block-text">Programmer，IoT students</p>
+                        </div>
+                        <ul class="list-inline">
+                            <li><a href="#" class="social-icons"><i class="icon-social-facebook"></i></a></li>
+                            <li><a href="#" class="social-icons"><i class="icon-social-twitter"></i></a></li>
+                            <li><a href="#" class="social-icons"><i class="icon-social-dribbble"></i></a></li>
+                            <li><a href="#" class="social-icons"><i class="icon-social-behance"></i></a></li>
+                            <li><a href="#" class="social-icons"><i class="icon-social-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="promo-block-img-wrap">
+                            <img width="389" height="541" src="img/本人照片.jpg" align="Avatar" class="promo-block-img img-responsive" />
+                        </div>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        <!--========== SLIDER ==========-->
 
-    <section id="projects">
-        <h2>项目展示</h2>
-        <ul>
-            <li>项目1: 描述项目1的内容和技术</li>
-            <li>项目2: 描述项目2的内容和技术</li>
-            <!-- 添加更多项目 -->
-        </ul>
-    </section>
+        <!--========== PAGE LAYOUT ==========-->
+        <!-- About -->
+        <div id="about">
+            <div class="container content-lg">
+                <div class="row">
+                    <div class="col-sm-5 sm-margin-b-60">
+                        <img src="img/本人照片2.jpg" alt="Image" class="full-width img-responsive" />
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="section-seperator margin-b-50">
+                            <div class="margin-b-50">
+                                <div class="margin-b-30">
+                                    <h2>个人描述</h2>
+                                    <p>本人目前为西北工业大学计算机学院物联网工程专业大三学生,辅修工商管理,
+                                        <span id="ilgn06" class="c74298">在校期间大一大二绩点专业第三名,四六级均通过,担任过学院以及班内职务。</span>
+                                        <span id="in6wtj" class="c74316">获得过校级ACM编程二等奖,信息安全挑战赛校赛二等奖;</span>
+                                        <span id="icrcgj" class="c74334">大创内容为关于大模型驱动的大模型的安全应用问题,获得国家级立项</span>
+                                    </p>
+                                    <p>目前后端语言方面掌握C++/C,熟悉Python,Java,前端了解Vue框架,掌握c++/qt，qml前端后端布局设计；熟悉Linux操作系统与shell脚本语言，掌握计算机组成，计算机操作系统，嵌入式系统与计算机网络相关专业知识</p>
+                                </div>
+                                <a href="res/resume/简历.pdf" class="btn-theme btn-theme-md btn-default-bg text-uppercase" download>下载简历</a>
+                            </div>
+                        </div>
+                        <h2>技能特长</h2>
+                        <!-- Progress Box -->
+                        <div class="progress-box">
+                            <h5>C++/C<span class="color-heading pull-right">87%</span></h5>
+                            <div class="progress">
+                                <div role="progressbar" data-width="87" class="progress-bar bg-color-base"></div>
+                            </div>
+                        </div>
+                        <div class="progress-box">
+                            <h5>Python<span class="color-heading pull-right">96%</span></h5>
+                            <div class="progress">
+                                <div role="progressbar" data-width="96" class="progress-bar bg-color-base"></div>
+                            </div>
+                        </div>
+                        <div class="progress-box">
+                            <h5>Java<span class="color-heading pull-right">77%</span></h5>
+                            <div class="progress">
+                                <div role="progressbar" data-width="77" class="progress-bar bg-color-base"></div>
+                            </div>
+                        </div>
+                        <!-- End Progress Box -->
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        <!-- End About -->
 
-    <section id="contact">
-        <h2>联系我</h2>
-        <p>邮箱: 2640234196@qq.com</p>
-        <p>GitHub: <a href="https://github.com/liulh04">liulh04</a></p>
-    </section>
+        <!-- Experience -->
+        <div id="experience">
+            <div data-auto-height="true" class="bg-color-sky-light"></div>
+        </div>
+        <!-- End Experience -->
 
-    <footer>
-        <p>© 2025 liulh04</p>
-    </footer>
+        <!-- Work -->
+        <div id="work">
+            <div class="container content-lg">
+                <div class="row margin-b-40">
+                    <div class="col-sm-6">
+                        <h2>项目案例</h2>
+                        <p>对后端开发有着极大的热情和学习心,不断努力学习和积累经验,拥有敏捷开发，代码走读，日报总结等良好的编程习惯</p>
+                    </div>
+                </div>
+                <!--// end row -->
+                <div class="row">
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <div data-wow-duration=".3" data-wow-delay=".1s" class="wow zoomIn">
+                                <img src="img/01.jpg" alt="Latest Products Image" class="img-responsive" />
+                            </div>
+                        </div>
+                        <h4><a href="#">某</a>站云锁授权管理 <span class="text-uppercase margin-l-20">助理研究算法工程师</span></h4>
+                        <p>设计云锁授权工具，根据客户要求生成授权文件供一线授权 授权管理系统整合，<br />C++/Qt开发将功能整合进工作站，前端界面采用QML语言整洁美化 <br />了解项目开发全流程，了解Qt框架与产品级代码后端C++框架，熟悉敏捷开发全流程</p>
+                        <a href="#" class="link">了解更多</a>
+                    </div>
+                    <!-- End Latest Products -->
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <div data-wow-duration=".3" data-wow-delay=".1s" class="wow zoomIn">
+                                <img src="img/02.jpg" alt="Latest Products Image" class="img-responsive" />
+                            </div>
+                        </div>
+                        <h4>校园跑腿<a href="#">平台</a><span class="text-uppercase margin-l-20">后端开发</span></h4>
+                        <p>前端采用Vue.js框架，后端Python，连接本地数据库，开放本地端口，实现外部设备网页访问/操作，建立本地数据库，并更新数据库，实现存储，修改，删除操作 <br />熟悉产品开发流程，具备版本管理意识和和使用容器docker存储相关操作</p>
+                        <a href="#" class="link">了解更多</a>
+                    </div>
+                    <!-- End Latest Products -->
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <div data-wow-duration=".3" data-wow-delay=".1s" class="wow zoomIn">
+                                <img src="img/03.jpg" alt="Latest Products Image" class="img-responsive" />
+                            </div>
+                        </div>
+                        <h4>物联网系统平台 <span class="text-uppercase margin-l-20">后端开发</span></h4>
+                        <p>remain updating...</p>
+                        <a href="#" class="link">了解更多</a>
+                    </div>
+                    <!-- End Latest Products -->
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        <!-- End Work -->
+
+        <!-- Clients -->
+        <div id="i4ia2j" class="bg-color-sky-light c66662">
+            <div class="content-lg container">
+                <!-- Swiper Clients -->
+                <div class="swiper-slider swiper-clients">
+                    <!-- Swiper Wrapper -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/01.png" alt="Clients Logo" class="swiper-clients-img" /></div>
+                        <div class="swiper-slide"><img src="img/02.png" alt="Clients Logo" class="swiper-clients-img" /></div>
+                        <div class="swiper-slide"><img src="img/03.png" alt="Clients Logo" class="swiper-clients-img" /></div>
+                        <div class="swiper-slide"><img src="img/04.png" alt="Clients Logo" class="swiper-clients-img" /></div>
+                        <div class="swiper-slide"><img src="img/05.png" alt="Clients Logo" class="swiper-clients-img" /></div>
+                        <div class="swiper-slide"><img src="img/06.png" alt="Clients Logo" class="swiper-clients-img" /></div>
+                    </div>
+                    <!-- End Swiper Wrapper -->
+                </div>
+                <!-- End Swiper Clients -->
+            </div>
+        </div>
+        <!-- End Clients -->
+
+        <!-- Contact -->
+        <div id="contact">
+            <div class="bg-color-sky-light">
+                <div class="container content-lg">
+                    <div class="row margin-b-40">
+                        <div class="col-sm-6">
+                            <h2>联系方式</h2>
+                            <p>有扎实的编程功底，具备自主学习意识，具有团队合作精神，有敏捷开发意识；具有独立解决项目需求能力。
+								<p>了解Linux的Ununtu系统和Kail系统熟悉基本的shell脚本指令和使用简单的脚本工具</p>
+
+								<p>系统学习过R语言统计与分析，有相关分析经验</p>
+								
+								<p>了解Pythorch框架，曾在Autodl部署清华开源GLM3大模型并做微调操作</p>
+								
+								<p>参加正大杯14届市场调研大赛校级二等奖</p>
+								
+								<p>大创挑战杯基于大模型驱动的机器人安全问题小组成员担任ai安全问题研究（国家级立项项目）
+								</p>
+                        </div>
+                    </div>
+                    <!--// end row -->
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6 md-margin-b-30">
+                            <h4>地址</h4>
+                            <a href="#">Shaanxi Xi'an，China</a>
+                        </div>
+                        <div class="col-md-3 col-xs-6 md-margin-b-30">
+                            <h4>电话</h4>
+                            <a href="#">155-9252-0310</a>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <h4>Email</h4>
+                            <a href="mailto:help@lapus.cn">2640234196@qq,com</a>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <h4>网站</h4>
+                            <a href="#">liulu04.github.io</a>
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+        </div>
+        <!-- End Contact -->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-6"></div>
+                    <div class="col-xs-6 text-right sm-text-left">
+                        <p class="margin-b-0">Copyright © 2025 liulh04， Designed by Lanker</p>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </footer>
+        <!--========== END FOOTER ==========-->
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="js/jquery.easing.js" type="text/javascript"></script>
+        <script src="js/jquery.back-to-top.js" type="text/javascript"></script>
+        <!-- <script src="js/jquery.smooth-scroll.js" type="text/javascript"></script> -->
+        <script src="js/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="js/jquery.parallax.min.js" type="text/javascript"></script>
+        <script src="js/jquery.appear.js" type="text/javascript"></script>
+        <script src="js/swiper.jquery.min.js" type="text/javascript"></script>
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/layout.min.js" type="text/javascript"></script>
+        <script src="js/progress-bar.min.js" type="text/javascript"></script>
+        <script src="js/swiper.min.js" type="text/javascript"></script>
+        <script src="js/wow.min.js" type="text/javascript"></script>
+    </div>
 </body>
+
 </html>
