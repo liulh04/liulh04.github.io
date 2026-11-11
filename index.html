@@ -1,324 +1,156 @@
-<!DOCTYPE html>
-<html lang='en'>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#172321" />
+    <meta
+      name="description"
+      content="LiuLanker，西北工业大学计算机博士在读，关注高效大模型、人工智能与物联网。"
+    />
+    <title>LiuLanker | AI Research & Engineering</title>
+    <link rel="preload" href="img/本人照片.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="LiuLanker 首页">LL<span>.</span></a>
+      <nav aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#work">项目</a>
+        <a href="#writing">文章</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <a class="header-link" href="https://github.com/liulh04" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </header>
 
-<head>
-    <meta charset='utf-8'>
-    <title>我的网页 - Liulanker</title>
-    <meta name="description" content="myprofile">
-    <meta name="keywords" content="lanker">
-    <link href="css/simple-line-icons.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
-    <link rel="preload" href="fonts/Simple-Line-Icons.woff2" as="font" type="font/woff2" crossorigin="" />
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        .c66662 {
-            display: none;
-        }
-
-        .promo-block-img.img-responsive {
-            width: 529.800048828125px;
-            height: 530px;
-        }
-
-        .c74298,
-        .c74316,
-        .c74334 {
-            color: rgb(102, 120, 172);
-            font-size: 15px;
-        }
-
-        .img-responsive {
-            width: 381.333251953125px;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="body" data-spy="scroll" data-target=".header">
-        <!--========== HEADER ==========-->
-        <header class="header navbar-fixed-top">
-            <!-- Navbar -->
-            <nav role="navigation" class="navbar">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="menu-container js_nav-item">
-                        <button type="button" data-toggle="collapse" data-target=".nav-collapse" class="navbar-toggle">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
-                        
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-collapse">
-                        <div class="menu-container">
-                            <ul class="nav navbar-nav navbar-nav-right">
-                                <li class="js_nav-item nav-item"><a href="#body" class="nav-item-child nav-item-hover">首页</a></li>
-                                <li class="js_nav-item nav-item"><a href="#about" class="nav-item-child nav-item-hover">关于我</a></li>
-                                <!--li class="js_nav-item nav-item"><a href="#experience" class="nav-item-child nav-item-hover">个人经验</a></li  -->
-                                <li class="js_nav-item nav-item"><a href="#work" class="nav-item-child nav-item-hover">项目案例</a></li>
-                                <li class="js_nav-item nav-item"><a href="#contact" class="nav-item-child nav-item-hover">联系我</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Navbar Collapse -->
-                </div>
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!--========== END HEADER ==========-->
-
-        <!--========== SLIDER ==========-->
-        <div class="promo-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 sm-margin-b-60">
-                        <div class="margin-b-30">
-                            <h1 class="promo-block-title">Liu lanker</h1>
-                            <p class="promo-block-text">Programmer，Ed.D students</p>
-                        </div>
-                        <ul class="list-inline">
-                            <li><a href="tencent://message/?uin=2640234196"><img src="img/qq.svg" alt="QQ" class="social-icons"></a></li>
-                            <li><a href="https://github.com/liulh04"><img src="img/github.svg" alt="GitHub" class="social-icons"></a></li>
-                            <li><a href="#"><img src="img/tiktok.svg" alt="TikTok" class="social-icons"></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <!--div class="promo-block-img-wrap"-->
-                            <!--img width="389" height="541" src="img/本人照片.png" align="Avatar" class="promo-block-img img-responsive" /-->
-                        <!--/div-->
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="img/本人照片.png" alt="LiuLanker 的个人插画头像" />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><span class="status-dot"></span> NPU · Computer Science</p>
+          <h1 id="hero-title">LiuLanker</h1>
+          <p class="hero-summary">让模型更轻，让智能更靠近真实世界。</p>
+          <p class="hero-detail">西北工业大学计算机博士在读，关注高效大模型、AI 与物联网。</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#work">查看项目 <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://github.com/liulh04" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <!--========== SLIDER ==========-->
+        <span class="hero-index" aria-hidden="true">01 / PROFILE</span>
+      </section>
 
-        <!--========== PAGE LAYOUT ==========-->
-        <!-- About -->
-        <div id="about">
-            <div class="container content-lg">
-                <div class="row">
-                    <div class="col-sm-5 sm-margin-b-60">
-                        <img src="img/本人照片.png" alt="Image" class="full-width img-responsive" />
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="section-seperator margin-b-50">
-                            <div class="margin-b-50">
-                                <div class="margin-b-30">
-                                    <h2>Self-introduction</h2>
-                                    <p>NPU-CS博士在读,工管辅修
-                                        <p></p>
-                                        <span id="ilgn06" class="c74298">llm轻量化与压缩方向</span>
-                                        <p></p>
-                                        <span id="in6wtj" class="c74316">CSDNaigc搬运工，开源社区的爬虫玩家，虚无缥缈的titlepursuer</span>
-                                        <p></p>
-                                        <span id="icrcgj" class="c74334">Carlover，FPSlover</span>
-                                    </p>
-                                    <p></p>
-                                </div>
-                                <a href="res/resume/简历.pdf" class="btn-theme btn-theme-md btn-default-bg text-uppercase" download>下载朱波资料</a>
-                            </div>
-                        </div>
-                        <h2>技术栈</h2>
-                        <!-- Progress Box -->
-                        <div class="progress-box">
-                            <h5>Python<span class="color-heading pull-right">96%</span></h5>
-                            <div class="progress">
-                                <div role="progressbar" data-width="96" class="progress-bar bg-color-base"></div>
-                            </div>
-                        </div>
-                        <div class="progress-box">
-                            <h5>C++/C<span class="color-heading pull-right">87%</span></h5>
-                            <div class="progress">
-                                <div role="progressbar" data-width="87" class="progress-bar bg-color-base"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="progress-box">
-                            <h5>Java<span class="color-heading pull-right">77%</span></h5>
-                            <div class="progress">
-                                <div role="progressbar" data-width="77" class="progress-bar bg-color-base"></div>
-                            </div>
-                        </div>
-                        <!-- End Progress Box -->
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
+      <section id="about" class="section about-section">
+        <div class="section-heading">
+          <p class="eyebrow">ABOUT</p>
+          <h2>研究与实践</h2>
         </div>
-        <!-- End About -->
-
-        <!-- Experience -->
-        <div id="experience">
-            <div data-auto-height="true" class="bg-color-sky-light"></div>
+        <div class="about-copy">
+          <p class="lead">我关注如何让人工智能系统更高效、更可靠，也更容易进入真实应用场景。</p>
+          <p>目前的兴趣集中在大语言模型轻量化与压缩、AI 系统，以及人工智能与物联网的结合。我也喜欢把研究想法整理成可复用的工具和开放项目。</p>
+          <div class="focus-list" aria-label="研究兴趣">
+            <span>高效大模型</span>
+            <span>模型压缩</span>
+            <span>AI × IoT</span>
+          </div>
         </div>
-        <!-- End Experience -->
+      </section>
 
-        <!-- Work -->
-        <div id="work">
-            <div class="container content-lg">
-                <div class="row margin-b-40">
-                    <div class="col-sm-6">
-                        <h2>项目案例</h2>
-                        <p></p>
-                    </div>
-                </div>
-                <!--// end row -->
-                <div class="row">
-                    <!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <div data-wow-duration=".3" data-wow-delay=".1s" class="wow zoomIn">
-                                <img src="img/01.jpg" alt="Latest Products Image" class="img-responsive" />
-                            </div>
-                        </div>
-                        <h4><a href="#"></a>某站云锁授权管理 <span class="text-uppercase margin-l-20">助理研究算法工程师</span></h4>
-                        <p>云锁授权工具，据需求生成授权文件授权 整合授权管理系统，<br />技术栈：C++/Qt/qml，围绕qt重型库工具链的使用与开发<br />熟悉项目开发全流程，具备产品级代码走读流程与敏捷开发提测要点</p>
-                        <a href="#" class="link">了解更多</a>
-                    </div>
-                    <!-- End Latest Products -->
-                    <!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <div data-wow-duration=".3" data-wow-delay=".1s" class="wow zoomIn">
-                                <img src="img/02.jpg" alt="Latest Products Image" class="img-responsive" />
-                            </div>
-                        </div>
-                        <h4>基于yolov5的ros2机器人目标检测与识别<a href="#">平台</a><span class="text-uppercase margin-l-20">项目全流程</span></h4>
-                        <p><br /></p>
-                        <a href="https://blog.csdn.net/LLH004/article/details/151182803?fromshare=blogdetail&sharetype=blogdetail&sharerId=151182803&sharerefer=PC&sharesource=LLH004&sharefrom=from_link" class="link">了解更多</a>
-                    </div>
-                    <!-- End Latest Products -->
-                    <!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <div data-wow-duration=".3" data-wow-delay=".1s" class="wow zoomIn">
-                                <img src="img/03.jpg" alt="Latest Products Image" class="img-responsive" />
-                            </div>
-                        </div>
-                        <h4>物联网系统平台 <span class="text-uppercase margin-l-20">后端开发</span></h4>
-                        <p>remain updating...</p>
-                        <a href="#" class="link">了解更多</a>
-                    </div>
-                    <!-- End Latest Products -->
-                </div>
-                <!--// end row -->
-            </div>
+      <section id="work" class="section work-section">
+        <div class="section-heading work-heading">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>项目精选</h2>
+          </div>
+          <a class="text-link dark-link" href="https://github.com/liulh04?tab=repositories" target="_blank" rel="noreferrer">全部仓库 <span aria-hidden="true">↗</span></a>
         </div>
-        <!-- End Work -->
 
-        <!-- Clients -->
-        <div id="i4ia2j" class="bg-color-sky-light c66662">
-            <div class="content-lg container">
-                <!-- Swiper Clients -->
-                <div class="swiper-slider swiper-clients">
-                    <!-- Swiper Wrapper -->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/01.png" alt="Clients Logo" class="swiper-clients-img" /></div>
-                        <div class="swiper-slide"><img src="img/02.png" alt="Clients Logo" class="swiper-clients-img" /></div>
-                        <div class="swiper-slide"><img src="img/03.png" alt="Clients Logo" class="swiper-clients-img" /></div>
-                        <div class="swiper-slide"><img src="img/04.png" alt="Clients Logo" class="swiper-clients-img" /></div>
-                        <div class="swiper-slide"><img src="img/05.png" alt="Clients Logo" class="swiper-clients-img" /></div>
-                        <div class="swiper-slide"><img src="img/06.png" alt="Clients Logo" class="swiper-clients-img" /></div>
-                    </div>
-                    <!-- End Swiper Wrapper -->
-                </div>
-                <!-- End Swiper Clients -->
+        <div class="project-list">
+          <article class="project-row project-capsule">
+            <div class="project-number">01</div>
+            <div class="project-main">
+              <p class="project-type">CODEX SKILL · OPEN SOURCE</p>
+              <h3>Context Capsule</h3>
+              <p>把长对话整理成紧凑、可审阅的上下文胶囊，让后续 AI 协作者快速恢复目标、决策、进度和下一步。</p>
+              <ul class="tag-list" aria-label="技术标签">
+                <li>Python</li>
+                <li>Markdown</li>
+                <li>AI workflow</li>
+              </ul>
             </div>
+            <a class="project-link" href="https://github.com/liulh04/ContextCapsule" target="_blank" rel="noreferrer" aria-label="查看 Context Capsule 仓库">↗</a>
+          </article>
+
+          <article class="project-row project-robot">
+            <div class="project-number">02</div>
+            <div class="project-main">
+              <p class="project-type">ROBOTICS · COMPUTER VISION</p>
+              <h3>ROS 2 机器人视觉平台</h3>
+              <p>围绕 YOLOv5 与 ROS 2 构建目标检测和识别流程，记录从算法到机器人系统集成的实践。</p>
+              <ul class="tag-list" aria-label="技术标签">
+                <li>YOLOv5</li>
+                <li>ROS 2</li>
+                <li>Computer Vision</li>
+              </ul>
+            </div>
+            <a class="project-link" href="https://blog.csdn.net/LLH004/article/details/151182803" target="_blank" rel="noreferrer" aria-label="阅读 ROS 2 机器人视觉项目文章">↗</a>
+          </article>
         </div>
-        <!-- End Clients -->
+      </section>
 
-        <!-- Contact -->
-        <div id="contact">
-            <div class="bg-color-sky-light">
-                <div class="container content-lg">
-                    <div class="row margin-b-40">
-                        <div class="col-sm-6">
-                            <h2>Experience&Awards</h2>
-                            <p>
-								<p>NPU校级编程竞赛一二等奖</p>
-
-								<p>系统学习R语言统计与分析，具备大数据处理与分析经验</p>
-								
-								<p>了解Pythorch框架，具备大模型部署与微调经验</p>
-								
-								<p>正大杯14届市场调研大赛校级二等奖</p>
-								
-								<p>基于大模型驱动的机器人安全问题任ai安全问题研究与安全测试工具开发（国家级良好结项）
-								</p>
-                        </div>
-                    </div>
-                    <!--// end row -->
-                    <div class="row">
-                        <div class="col-md-3 col-xs-6 md-margin-b-30">
-                            <h4>地址</h4>
-                            <a href="#">Shaanxi Xi'an，China</a>
-                        </div>
-                        <div class="col-md-3 col-xs-6 md-margin-b-30">
-                            <h4>CSDNBLOG</h4>
-                            <a href="https://blog.csdn.net/LLH004">LLH004</a>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <h4>Email</h4>
-                            <a href="mailto:2640234196@qq.com">2640234196@qq.com</a>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <h4>GitHub项目库</h4>
-                            <a href="https://github.com/liulh04">liulh04.github</a>
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
+      <section id="writing" class="section writing-section">
+        <div class="section-heading writing-heading">
+          <div>
+            <p class="eyebrow">FIELD NOTES</p>
+            <h2>从实践中形成的判断</h2>
+          </div>
+          <a class="text-link dark-link" href="https://blog.csdn.net/LLH004" target="_blank" rel="noreferrer">全部文章 <span aria-hidden="true">↗</span></a>
         </div>
-        <!-- End Contact -->
-
-        <!--========== FOOTER ==========-->
-        <footer class="footer">
-            <div class="content container">
-                <div class="row">
-                    <div class="col-xs-6"></div>
-                    <div class="col-xs-6 text-right sm-text-left">
-                        <p class="margin-b-0">Copyright © 2025 liulh04， Designed by Lanker</p>
-                    </div>
-                </div>
-                <!--// end row -->
+        <div class="writing-list">
+          <article class="writing-row">
+            <p class="writing-topic">MODEL COMPRESSION</p>
+            <div>
+              <h3><a href="https://blog.csdn.net/LLH004/article/details/154748653" target="_blank" rel="noreferrer">量化先要稳定，再谈压缩率 <span aria-hidden="true">↗</span></a></h3>
+              <p>ZeroQ 复现中的关键教训：先检查损失尺度与归一化，再评估位宽；分母接近零时，相对误差可能放大噪声，低位量化也需要处理离群值。</p>
             </div>
-        </footer>
-        <!--========== END FOOTER ==========-->
+            <time datetime="2025-11-12">2025.11</time>
+          </article>
+          <article class="writing-row">
+            <p class="writing-topic">TRAINING SYSTEMS</p>
+            <div>
+              <h3><a href="https://blog.csdn.net/LLH004/article/details/160218541" target="_blank" rel="noreferrer">把 OOM 当作内存行为来诊断 <span aria-hidden="true">↗</span></a></h3>
+              <p>报错位置往往只是最后一根稻草。结合分配器快照、计算图引用和迭代峰值，分辨真实容量不足、碎片化与意外保留，再选择优化手段。</p>
+            </div>
+            <time datetime="2026-04-16">2026.04</time>
+          </article>
+          <article class="writing-row">
+            <p class="writing-topic">VISION & INTERPRETABILITY</p>
+            <div>
+              <h3><a href="https://blog.csdn.net/LLH004/article/details/155525523" target="_blank" rel="noreferrer">用注意力图观察 ViT 看向哪里 <span aria-hidden="true">↗</span></a></h3>
+              <p>从 patch token 还原 CLS 注意力热图，观察主体、边缘和背景的响应，让可视化成为模型调试与失败案例分析的入口。</p>
+            </div>
+            <time datetime="2025-12-03">2025.12</time>
+          </article>
+        </div>
+      </section>
 
-        <!-- Back To Top -->
-        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+      <section id="contact" class="contact-band">
+        <div>
+          <p class="eyebrow">CONNECT</p>
+          <h2>一起交流研究与开源。</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-dark" href="https://github.com/liulh04" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="https://blog.csdn.net/LLH004" target="_blank" rel="noreferrer">CSDN <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
 
-        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-        <!-- CORE PLUGINS -->
-        <script src="js/jquery.min.js" type="text/javascript"></script>
-        <script src="js/jquery-migrate.min.js" type="text/javascript"></script>
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <!-- PAGE LEVEL PLUGINS -->
-        <script src="js/jquery.easing.js" type="text/javascript"></script>
-        <script src="js/jquery.back-to-top.js" type="text/javascript"></script>
-        <!-- <script src="js/jquery.smooth-scroll.js" type="text/javascript"></script> -->
-        <script src="js/jquery.wow.min.js" type="text/javascript"></script>
-        <script src="js/jquery.parallax.min.js" type="text/javascript"></script>
-        <script src="js/jquery.appear.js" type="text/javascript"></script>
-        <script src="js/swiper.jquery.min.js" type="text/javascript"></script>
-        <!-- PAGE LEVEL SCRIPTS -->
-        <script src="js/layout.min.js" type="text/javascript"></script>
-        <script src="js/progress-bar.min.js" type="text/javascript"></script>
-        <script src="js/swiper.min.js" type="text/javascript"></script>
-        <script src="js/wow.min.js" type="text/javascript"></script>
-    </div>
-</body>
-
+    <footer class="site-footer">
+      <a class="wordmark" href="#top" aria-label="回到顶部">LL<span>.</span></a>
+      <p>© 2026 LiuLanker</p>
+      <a href="https://github.com/liulh04" target="_blank" rel="noreferrer">Built in the open <span aria-hidden="true">↗</span></a>
+    </footer>
+  </body>
 </html>
