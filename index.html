@@ -28,6 +28,7 @@
       <section class="hero" aria-labelledby="hero-title">
         <img class="hero-image" src="img/本人照片.png" alt="LiuLanker 的个人插画头像" />
         <div class="hero-shade" aria-hidden="true"></div>
+        <canvas class="hero-canvas" aria-hidden="true"></canvas>
         <div class="hero-content">
           <p class="eyebrow"><span class="status-dot"></span> NPU · Computer Science</p>
           <h1 id="hero-title">LiuLanker</h1>
@@ -42,11 +43,11 @@
       </section>
 
       <section id="about" class="section about-section">
-        <div class="section-heading">
+        <div class="section-heading" data-reveal>
           <p class="eyebrow">ABOUT</p>
           <h2>研究与实践</h2>
         </div>
-        <div class="about-copy">
+        <div class="about-copy" data-reveal data-reveal-delay="1">
           <p class="lead">我关注如何让人工智能系统更高效、更可靠，也更容易进入真实应用场景。</p>
           <p>目前的兴趣集中在大语言模型轻量化与压缩、AI 系统，以及人工智能与物联网的结合。我也喜欢把研究想法整理成可复用的工具和开放项目。</p>
           <div class="focus-list" aria-label="研究兴趣">
@@ -58,7 +59,7 @@
       </section>
 
       <section id="work" class="section work-section">
-        <div class="section-heading work-heading">
+        <div class="section-heading work-heading" data-reveal>
           <div>
             <p class="eyebrow">SELECTED WORK</p>
             <h2>项目精选</h2>
@@ -67,7 +68,7 @@
         </div>
 
         <div class="project-list">
-          <article class="project-row project-capsule">
+          <article class="project-row project-capsule" data-reveal>
             <div class="project-number">01</div>
             <div class="project-main">
               <p class="project-type">CODEX SKILL · OPEN SOURCE</p>
@@ -82,7 +83,7 @@
             <a class="project-link" href="https://github.com/liulh04/ContextCapsule" target="_blank" rel="noreferrer" aria-label="查看 Context Capsule 仓库">↗</a>
           </article>
 
-          <article class="project-row project-robot">
+          <article class="project-row project-robot" data-reveal data-reveal-delay="1">
             <div class="project-number">02</div>
             <div class="project-main">
               <p class="project-type">ROBOTICS · COMPUTER VISION</p>
@@ -100,7 +101,7 @@
       </section>
 
       <section id="writing" class="section writing-section">
-        <div class="section-heading writing-heading">
+        <div class="section-heading writing-heading" data-reveal>
           <div>
             <p class="eyebrow">FIELD NOTES</p>
             <h2>从实践中形成的判断</h2>
@@ -108,7 +109,7 @@
           <a class="text-link dark-link" href="https://blog.csdn.net/LLH004" target="_blank" rel="noreferrer">全部文章 <span aria-hidden="true">↗</span></a>
         </div>
         <div class="writing-list">
-          <article class="writing-row">
+          <article class="writing-row" data-reveal>
             <p class="writing-topic">MODEL COMPRESSION</p>
             <div>
               <h3><a href="https://blog.csdn.net/LLH004/article/details/154748653" target="_blank" rel="noreferrer">量化先要稳定，再谈压缩率 <span aria-hidden="true">↗</span></a></h3>
@@ -116,7 +117,7 @@
             </div>
             <time datetime="2025-11-12">2025.11</time>
           </article>
-          <article class="writing-row">
+          <article class="writing-row" data-reveal data-reveal-delay="1">
             <p class="writing-topic">TRAINING SYSTEMS</p>
             <div>
               <h3><a href="https://blog.csdn.net/LLH004/article/details/160218541" target="_blank" rel="noreferrer">把 OOM 当作内存行为来诊断 <span aria-hidden="true">↗</span></a></h3>
@@ -124,7 +125,7 @@
             </div>
             <time datetime="2026-04-16">2026.04</time>
           </article>
-          <article class="writing-row">
+          <article class="writing-row" data-reveal data-reveal-delay="2">
             <p class="writing-topic">VISION & INTERPRETABILITY</p>
             <div>
               <h3><a href="https://blog.csdn.net/LLH004/article/details/155525523" target="_blank" rel="noreferrer">用注意力图观察 ViT 看向哪里 <span aria-hidden="true">↗</span></a></h3>
@@ -136,11 +137,11 @@
       </section>
 
       <section id="contact" class="contact-band">
-        <div>
+        <div data-reveal>
           <p class="eyebrow">CONNECT</p>
           <h2>一起交流研究与开源。</h2>
         </div>
-        <div class="contact-actions">
+        <div class="contact-actions" data-reveal data-reveal-delay="1">
           <a class="button button-dark" href="https://github.com/liulh04" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           <a class="button button-outline" href="https://blog.csdn.net/LLH004" target="_blank" rel="noreferrer">CSDN <span aria-hidden="true">↗</span></a>
         </div>
@@ -152,5 +153,6 @@
       <p>© 2026 LiuLanker</p>
       <a href="https://github.com/liulh04" target="_blank" rel="noreferrer">Built in the open <span aria-hidden="true">↗</span></a>
     </footer>
+    <script src="motion.js" defer></script>
   </body>
 </html>
